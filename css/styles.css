@@ -11019,6 +11019,12 @@ header.masthead h1, header.masthead .h1 {
   padding: 2px 4px;
   border-radius: 3px;
 }
+@media only screen and (min-width: 228px) {
+  /* CSS rules for mobile view */
+  header.masthead {
+    height: 100vh;
+  }
+}
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
