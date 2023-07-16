@@ -35,6 +35,7 @@
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" id="downloadButton" href="">Download Resume</a></li>
                     </ul>
                 </div>
             </div>
@@ -218,6 +219,22 @@
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Kyle Andrae</div></div>
         </footer>
         </div>
+        <script>
+
+            var resumeUrl = 'assets/kyle_alino_cv.pdf';
+
+            // Add an event listener to the download button
+            document.getElementById('downloadButton').addEventListener('click', function() {
+            // Create a temporary link element
+            var link = document.createElement('a');
+            link.href = resumeUrl;
+            link.download = 'kyle_alino_cv.pdf';
+            
+            // Trigger the download
+            link.click();
+            });
+
+        </script>
         <script>
             var text = "Jr Programmer";
             var speed = 100; // Adjust the typing speed (in milliseconds) as desired
